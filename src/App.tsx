@@ -1,12 +1,12 @@
 // import { BrowserRouter, Routes,Route } from "react-router-dom";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import Topbar from "./pages/Topbar";
+import Topbar from "./components/Topbar";
 import Sidebar from "./pages/Sidebar";
 import Dashboard from "./pages/Dashboard";
-
 import Error from "./pages/Error";
 import Shimmer from "./pages/Shimmer";
+import Home from "./pages/Home";
 const Product = lazy(() => import("./pages/Product"));
 const Customer = lazy(() => import("./pages/Customer"));
 const Transaction = lazy(() => import("./pages/Transaction"));
@@ -44,6 +44,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/transaction",
         element: <Transaction />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
       },
     ],
   },
