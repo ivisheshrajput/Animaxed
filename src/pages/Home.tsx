@@ -5,16 +5,16 @@ import ProductCard from "../components/ProductCard";
 const Home = () => {
   const addToCardHandler = () => {};
   return (
-    <div>
-      <section className="flex justify-center items-center my-9 ">
+    <div className="mx-8">
+      <section className="flex justify-center items-center my-4">
         {" "}
         <img
           src={BackgroundImage}
           alt="Background Image"
-          className=" md:w-10/12 h-[300px] shadow-md"
+          className=" w-full h-[400px] shadow-md"
         />
       </section>
-      <div className="flex justify-between mx-4">
+      <div className="flex justify-between">
         <h1 className="text-2xl font-semibold tracking-wider ">
           Latest Product{" "}
         </h1>

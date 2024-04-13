@@ -17,7 +17,7 @@ const App = () => {
       <Suspense fallback={<Shimmer />}>
         <Topbar />
         <Outlet />
-        <Sidebar />
+        {/* <Sidebar /> */}
       </Suspense>
     </>
   );
