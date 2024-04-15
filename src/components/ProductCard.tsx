@@ -27,8 +27,8 @@ const ProductCard = ({
     >
       {/* <img src={`${server}/${photo}`} alt={name} /> */}
       <img src={photo} alt={name} className="w-48  h-44    " />
-      <p className="text-md">{name}</p>
-      <span className="text-xs">₹{price}</span>
+      <p className="text-md font-PoppinsRegular   ">{name}</p>
+      <span className="text-xs font-PoppinsSemiBoldItalic  ">₹{price}</span>
       <div className={isHover ? "opacity-100" : "opacity-0"}>
         <button
           onClick={() => handler()}

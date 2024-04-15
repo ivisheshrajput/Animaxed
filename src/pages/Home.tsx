@@ -15,11 +15,11 @@ const Home = () => {
         />
       </section>
       <div className="flex justify-between">
-        <h1 className="text-2xl font-semibold tracking-wider ">
+        <h1 className="text-2xl font-PoppinsSemiBold   tracking-wider ">
           Latest Product{" "}
         </h1>
         <Link to={"/search"}>
-          <span className="text-md">More</span>
+          <span className="text-md font-PoppinsMedium bg-tertiary-color ">More</span>
         </Link>
       </div>
       <main>
