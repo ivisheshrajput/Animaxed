@@ -21,7 +21,7 @@ const ProductCard = ({
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
     <div
-      className=" w-52 border-none rounded-lg  shadow-lg h-60   flex flex-col justify-center items-center relative "
+      className=" w-52 border-none rounded-lg   bg-white  h-60   flex flex-col justify-center items-center relative "
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
@@ -32,7 +32,7 @@ const ProductCard = ({
       <div className={isHover ? "opacity-100" : "opacity-0"}>
         <button
           onClick={() => handler()}
-          className=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:rotate-90 transition-all delay-200  bg-blue-500 text-white rounded-full p-2 absolute "
+          className=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:rotate-90 transition-all delay-200  bg-primary-color  text-white  rounded-full p-2 absolute "
         >
           <FaPlus className=" " />
         </button>

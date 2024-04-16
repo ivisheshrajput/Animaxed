@@ -7,19 +7,20 @@ import Dashboard from "./pages/Dashboard";
 import Error from "./pages/Error";
 import Shimmer from "./pages/Shimmer";
 import Home from "./pages/Home";
+import Cart from "./pages/Cart";
 const Product = lazy(() => import("./pages/Product"));
 const Customer = lazy(() => import("./pages/Customer"));
 const Transaction = lazy(() => import("./pages/Transaction"));
 
 const App = () => {
   return (
-    <>
+    <div className="bg-primary-color font-PoppinsRegular w-full">
       <Suspense fallback={<Shimmer />}>
         <Topbar />
         <Outlet />
         {/* <Sidebar /> */}
       </Suspense>
-    </>
+    </div>
   );
 };
 
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

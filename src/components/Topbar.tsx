@@ -17,8 +17,8 @@ const Topbar = () => {
   };
 
   return (
-    <div className="md:flex md:justify-end w-full mb-4">
-      <nav className="flex p-4 space-x-3 text-md w-full justify-end border items-center bg-blue-200 rounded-full relative pr-8">
+    <div className="md:flex md:justify-end w-full mb-20">
+      <nav className="md:fixed flex p-4 space-x-3 text-md w-full text-white text-lg  justify-end font-PoppinsRegular   items-center bg-gradient-to-l  from-primary-color    ">
         <Link to="/home" onClick={() => setIsOpen(false)}>
           Home
         </Link>

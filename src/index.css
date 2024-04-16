@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @font-face {
     font-family: "Poppins-ExtraLightItalic";
     src: url(/src/assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf) format('truetype');
@@ -73,7 +78,18 @@
 
 
 
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 7px; /* width of the scrollbar */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb {
+    background: #2b2b2f; /* color of the scrollbar */
+    border-radius: 1px; /* roundness of the scrollbar */
+  }
+  
+  /* Handle on scrollbar grab */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2d3748; /* darker color when hovering */
+  }
