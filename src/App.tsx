@@ -14,7 +14,7 @@ const Transaction = lazy(() => import("./pages/Transaction"));
 
 const App = () => {
   return (
-    <div className="bg-primary-color font-PoppinsRegular w-full">
+    <div className="bg-primary-color font-PoppinsRegular w-full h-screen">
       <Suspense fallback={<Shimmer />}>
         <Topbar />
         <Outlet />

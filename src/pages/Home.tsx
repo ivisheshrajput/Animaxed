@@ -8,8 +8,15 @@ const Home = () => {
     <div className="mx-8 ">
       <section className="flex justify-between  items-center  md:my-4">
         {" "}
-        <div ><p className="text-white text-sm">Top Searches</p>
-        <p className="text-xs text-tertiary-color">Naruto, One Piece, Dragon Ball, Shadow Levelling</p>
+        <div>
+          <p className="text-white text-3xl">
+            ani<span className="text-tertiary-color">maxed</span>
+          </p>
+
+          <p className="text-white text-sm">Top Searches</p>
+          <p className="text-xs text-tertiary-color">
+            Naruto, One Piece, Dragon Ball, Shadow Levelling
+          </p>
         </div>
         <img
           src={BackgroundImage}
@@ -18,14 +25,16 @@ const Home = () => {
         />
       </section>
       <div className="flex justify-between">
-        <h1 className="text-2xl font-PoppinsMedium text-tertiary-color   tracking-wider ">
+        <h1 className="text-2xl font-PoppinsRegular  text-tertiary-color   tracking-wider ">
           Latest Product{" "}
         </h1>
         <Link to={"/search"}>
-          <span className="text-md font-PoppinsMedium text-tertiary-color ">More</span>
+          <span className="text-md font-PoppinsMedium text-tertiary-color ">
+            More
+          </span>
         </Link>
       </div>
-      <main className="mt-3">
+      <main className="mt-5">
         <ProductCard
           name="Goku"
           price={1200}

@@ -26,7 +26,11 @@ const ProductCard = ({
       onMouseLeave={() => setIsHover(false)}
     >
       {/* <img src={`${server}/${photo}`} alt={name} /> */}
-      <img src={photo} alt={name} className="w-48  h-44    " />
+      <img
+        src={photo}
+        alt={name}
+        className="w-48  h-44 hover:h-40 hover:w-44   "
+      />
       <p className="text-md font-PoppinsRegular   ">{name}</p>
       <span className="text-xs font-PoppinsSemiBoldItalic  ">₹{price}</span>
       <div className={isHover ? "opacity-100" : "opacity-0"}>
